@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: zuul
+  cloud:
+    config:
+      enabled: false
+zuul:
+    host:
+        connect-timeout-millis: 5000
+        socket-timeout-millis: 10000
+
+hystrix:
+    command:
+        default:
+            execution:
+                isolation:
+                    thread:
+                        timeoutInMilliseconds: 10000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://ec2-54-70-136-53.us-west-2.compute.amazonaws.com/eureka/

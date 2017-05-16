@@ -1,0 +1,18 @@
+server:
+  port: 8080
+    
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 5
+    statusPageUrlPath: /info
+    healthCheckUrlPath: /health
+  client:
+    enabled: true
+    eureka-service-url-poll-interval-seconds: 5
+    initial-instance-info-replication-interval-seconds: 5
+    instance-info-replication-interval-seconds: 5
+    
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web: DEBUG
