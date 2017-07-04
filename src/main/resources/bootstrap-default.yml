@@ -20,4 +20,4 @@ hystrix:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://ec2-52-27-69-178.us-west-2.compute.amazonaws.com:8761/eureka/
+      defaultZone: http://ec2-34-212-100-111.us-west-2.compute.amazonaws.com:8761/eureka/
